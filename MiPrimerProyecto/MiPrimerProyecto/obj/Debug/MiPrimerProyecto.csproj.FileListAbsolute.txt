@@ -1,0 +1,7 @@
+C:\Users\danil\OneDrive\Desktop\progra-l-2024-2.git\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.csproj.AssemblyReference.cache
+C:\Users\danil\OneDrive\Desktop\progra-l-2024-2.git\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.csproj.CoreCompileInputs.cache
+C:\Users\danil\OneDrive\Desktop\progra-l-2024-2.git\MiPrimerProyecto\MiPrimerProyecto\bin\Debug\MiPrimerProyecto.exe.config
+C:\Users\danil\OneDrive\Desktop\progra-l-2024-2.git\MiPrimerProyecto\MiPrimerProyecto\bin\Debug\MiPrimerProyecto.exe
+C:\Users\danil\OneDrive\Desktop\progra-l-2024-2.git\MiPrimerProyecto\MiPrimerProyecto\bin\Debug\MiPrimerProyecto.pdb
+C:\Users\danil\OneDrive\Desktop\progra-l-2024-2.git\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.exe
+C:\Users\danil\OneDrive\Desktop\progra-l-2024-2.git\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\MiPrimerProyecto.pdb
