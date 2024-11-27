@@ -387,7 +387,7 @@ namespace academica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 486);
+            this.ClientSize = new System.Drawing.Size(1163, 492);
             this.Controls.Add(this.lblBuscarAlumnos);
             this.Controls.Add(this.txtBuscarAlumnos);
             this.Controls.Add(this.grdDatosAlumnos);
