@@ -5,59 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 namespace miPrimerProyecto
 {
-    internal class Program
+    internal class Conversores
     {
-        static void Main(string[] args)
+        double[][] valores = new double[][] {
+            new double[] {},//vacio solo para comenzar en 1
+            new double[] {0,1,7.73,24.76,36.80, 517.04,8.75,0.9},//monedas
+            new double[] {0,1,100,39.37,3.28084,1.196308,1.09361,0.001},//longitud
+            new double[] {0,1,453.592,16,0.453592, 0.000446429}, //masa
+            new double[] {0,1,86400, 1440, 24, 0.142857, 0.032876643423, 0.0027397232876831892345}//tiempo
+        };
+        public String[][] etiquetas = new String[][]{
+            new String[] {},//vacio solo para comenzar en 1
+            new string[] {"", "Dolar","Quetzal","Lempira","Cordoba","Colon CR","Colon SV", "Euro"},//monedas
+            new string[] {"", "Metro","Cm","Pulgada","Pie","Vara","Yarda","Km"},//longitud
+            new string[] {"", "Libra","Gramo","Onza","Kilogramo","Tonelada Larga"},//Masa
+            new string[] {"", "Dia","Sg","Min","Horas","Semana","Mes","Año"}
+        };
+        public double convertir(int de, int a, double cantidad, int opcion)
         {
-            // Uso de funciones...
-            // Ejercicio: Encontrar la media aritmética, desviación típica y media armónica de una serie de números.
-            Console.Write("Ingrese la serie de números separados por comas: ");
-            string input = Console.ReadLine();
-            string[] numeros = input.Split(',');
-
-            // Calculamos los valores necesarios.
-            double mediaAritmetica = Media(numeros);
-            double desviacionTipica = Tipica(numeros);
-            double mediaArmonica = Armonica(numeros);
-
-            // Mostramos los resultados.
-            Console.WriteLine("La media aritmética es: {0}, y la desviación típica es: {1}", mediaAritmetica, desviacionTipica);
-            Console.WriteLine("La media aritmética es: {0}, la desviación típica es: {1}, y la media armónica es: {2}",
-                mediaAritmetica, desviacionTipica, mediaArmonica);
-
-            Console.ReadLine();
-        }
-
-        static double Media(string[] serie)
-        {
-            double suma = 0;
-            foreach (string num in serie)
-            {
-                suma += double.Parse(num);
-            }
-            return suma / serie.Length;
-        }
-
-        static double Tipica(string[] serie)
-        {
-            double media = Media(serie);
-            double sumaCuadrados = 0;
-            foreach (string num in serie)
-            {
-                double valor = double.Parse(num);
-                sumaCuadrados += Math.Pow(valor - media, 2);
-            }
-            return Math.Round(Math.Sqrt(sumaCuadrados / serie.Length), 2);
-        }
-
-        static double Armonica(string[] serie)
-        {
-            double sumaInversa = 0;
-            foreach (string num in serie)
-            {
-                sumaInversa += 1.0 / double.Parse(num);
-            }
-            return Math.Round(serie.Length / sumaInversa, 2);
+            return valores[opcion][a] / valores[opcion][de] * cantidad;
         }
     }
 }
